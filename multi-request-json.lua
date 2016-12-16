@@ -38,6 +38,8 @@ function load_request_objects_from_file(file)
     return shuffle(data)
 end
 
+print("TOTOTOTOT")
+
 -- Load URL requests from file
 requests = load_request_objects_from_file("https://raw.githubusercontent.com/funzzy/funzzy.github.io/master/requests.json")
 
