@@ -27,27 +27,19 @@ function load_request_objects_from_file(file)
     local data = {}
     local content
 
-    -- Check if the file exists
-    -- Resource: http://stackoverflow.com/a/4991602/325852
-    local f=io.open(file,"r")
-    if f~=nil then
-        content = f:read("*all")
-
-        io.close(f)
-    else
-        -- Return the empty array
-        return lines
-    end
+    -- retrieve the content of a URL
+    local http = require("socket.http")
+    local body, code = http.request(file)
+    if not body then error(code) end
 
     -- Translate Lua value to/from JSON
-    data = cjson.decode(content)
-
+    data = cjson.decode(body)
 
     return shuffle(data)
 end
 
 -- Load URL requests from file
-requests = load_request_objects_from_file("/data/requests.json")
+requests = load_request_objects_from_file("https://raw.githubusercontent.com/funzzy/funzzy.github.io/master/requests.json")
 
 -- Check if at least one path was found in the file
 if #requests <= 0 then
