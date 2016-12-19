@@ -32,6 +32,8 @@ function load_request_objects_from_file(file)
     local body, code = http.request(file)
     if not body then error(code) end
 
+    print("TOTOTOTOT=" .. body)
+
     -- Translate Lua value to/from JSON
     data = cjson.decode(body)
 
