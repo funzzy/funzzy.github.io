@@ -1,0 +1,106 @@
+#mainHeader {
+    display: none;
+}
+
+.span3.content.sidePanelMenu.enhance.enhance-responsiveMenu-applied.showMenu {
+    display: none;
+}
+
+.conso-allperiods-notes {
+    display: none;
+}
+
+.astuces-pour-economiser.section-block.border-bottom {
+    display: none;
+}
+
+.foire-aux-questions.section-block {
+    display: none;
+}
+
+.enhance.enhance-footer_contact-applied.enhance-stickyResponsiveFooter-applied {
+    display: none;
+}
+
+.hgroup.noborder  {
+    display: none;
+}
+
+#gridSystem #portraitConsommation {
+    padding-top: 0px;
+}
+
+#gridSystem #portraitConsommation .section-block.conso-allperiods-wrapper {
+    padding-top: 0px;
+    border-top: 0;
+    border-bottom: 0;
+}
+
+#gridSystem #portraitConsommation .section-block {
+    margin-bottom: 0px;
+}
+
+#gridSystem #portraitConsommation .section-block.border-bottom {
+    padding-bottom: 0px;
+    border-bottom: 0px;
+}
+
+#gridSystem .container.responsiveGrid {
+    padding: 0;
+    width: 98%;
+}
+
+#gridSystem .container.responsiveGrid>.row>div.mainContent {
+    padding: 0px 5px;
+}
+
+#contenu {
+    margin: -17px 0px 0px 0px;
+}
+
+#gridSystem #portraitConsommation .compare-btn-wrapper {
+    padding: 0;
+}
+
+#gridSystem #portraitConsommation .switch-view-btn-wrapper {
+    margin-bottom: 0;
+}
+
+#gridSystem #portraitConsommation h2 {
+    padding-top: 0;
+    margin-bottom: 0;
+}
+
+.oneperiod-day-select-ctn {
+    display: none;
+}
+
+#gridSystem #portraitConsommation .conso-oneperiod-history .legend-item-wrapper {
+    margin-bottom: 0;
+}
+
+#gridSystem #portraitConsommation .conso-oneperiod-graph-shadowleft, #gridSystem #portraitConsommation .conso-oneperiod-graph-shadowright {
+    padding: 0;
+}
+
+#gridSystem #portraitConsommation .history-compare-wrapper {
+    height: 0;
+}
+
+#gridSystem #portraitConsommation .total-annuel .actual-period {
+    padding: 0;
+}
+
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
+/* optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+    background: grey;
+}
+
