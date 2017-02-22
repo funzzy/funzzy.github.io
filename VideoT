@@ -1,0 +1,3 @@
+.toolbar-section,#header,#link-parent,#col-smaller,#content-main-hd,.tabs-issf,.aide,.footer-section {
+    display: none;
+}
