@@ -63,10 +63,11 @@
 
         if (window.location.search != "") {
             timeframe = window.location.search.split('=')[1]
+            alert("toto")
         }
 
         function changeTime(val){
-            window.location.href="/indext.html?" + val
+            window.location.href="?s=" + val
         }
 
 
@@ -80,7 +81,7 @@
                         "height": height,
                         "symbol": "BINANCE:" + this.name + "USDTPERP",
                         "interval": timeframe,
-                        "timezone": "Europe/Moscow",
+                        "timezone": "America/New_York",
                         "theme": theme_color,
                         "style": style_setting,
                         "locale": "en",
@@ -110,9 +111,13 @@
     </script>
 
     <select id="selectTime" onchange="changeTime(this.value)">
-        <option value="#">Select a location</option>
-        <option value="s=1">Location</option>
-        <option value="s=15">Other</option>
+        <option value="#">Select ton range de temp</option>
+        <option value="1">1m</option>
+        <option value="3">3m</option>
+        <option value="5">5m</option>
+        <option value="15">15m</option>
+        <option value="30">30m</option>
+        <option value="60">1h</option>
     </select>
 
     <div id="container1">
