@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="ru">
  <link rel="alternate icon" class="js-site-favicon" type="image/png" href="https://github.githubassets.com/favicons/favicon.png">
+<link rel="stylesheet" href="https://alexzionx.github.io/BinanceCharts/css/top_4collumn.css">
 
-	<title>Futures 15min Top 10</title>
+	<title>Фьючерсы 15мин Топ 10</title>
 
 <style>
 
 	 body{
-	   background-color: #171B26; 
+	   background-color: #171B26; /* Цвет фона веб-страницы светлый-#F8F9FD темный-#171B26 */
 	   }
 
      .Menu{
@@ -18,87 +19,6 @@
                  margin: 1% auto; /* отступ сверху и выравнивание по середине */
                  box-shadow: 2px 2px 4px 0px #000000; /* тень блока */
      }
-
-	 #chart
-	 {
-	 width:900px;
-	 margin:0 auto;
-	 overflow: hidden;
-	 }
-
-   #container0 {
-  width:900px;
-  margin:0 auto;
-  overflow: hidden;
-  }
-  #bar0 {
-  float:left;
-  width:150px;
-  }
-  #bar1 {
-  float:left;
-  width:150px;
-  }
-  #bar2 {
-  float:left;
-  width:150px;
-  }
-  #bar3 {
-  float:left;
-  width:150px;
-  }
-  #bar4 {
-  float:left;
-  width:150px;
-  }
-  #bar5 {
-  float:left;
-  width:150px;
-  }
-
-  #container01 {
- width:750px;
- margin:0 auto;
- overflow: hidden;
- }
- #bar0 {
- float:left;
- width:150px;
- }
- #bar1 {
- float:left;
- width:150px;
- }
- #bar2 {
- float:left;
- width:150px;
- }
- #bar3 {
- float:left;
- width:150px;
- }
- #bar4 {
- float:left;
- width:150px;
- }
- #bar5 {
- float:left;
- width:150px;
- }
-
-	#container1 {
- width:900px;
- margin:0 auto;
- overflow: hidden;
- }
- #leftbar1 {
- float:left;
- width:450px;
- }
- #rightbar1 {
- float:left;
- width:450px;
- }
 
 </style>
 
@@ -121,9 +41,8 @@ let grname9="MATIC";
 let grname10="TRX";
 
 
-
-let width=450; // ширина
-let height=450; // высота
+let width="auto"; // ширина
+let height=322; // высота
 let time_zone="Europe/Moscow"; // частовой пояс "Europe/Moscow"
 let theme_color="dark"; // выбор темы "dark" "light"
 let timeframe="15"; //задаем таймфрейм 1-3-5-15-30-60-120-180-240-D-W
@@ -136,10 +55,6 @@ let hide_side_toolbar_setting=false; // инструменты рисовани�
 let style_setting="1"; // стиль 0-бары 1-японские свечи 2-линия 3-область 4-ренко 5-каги 6-крестики-нолики 7-линейный прорыв 8-хейкен аши 9-пустые свечи
 let toolbar_bg_setting="#f1f3f6"; //
 let locale="ru"; // локализация
-
-</script>
-
-<script>
 
   function Graph(name) {
     this.name = name;
@@ -181,90 +96,63 @@ let graph7 = new Graph(grname7);
 let graph8 = new Graph(grname8);
 let graph9 = new Graph(grname9);
 let graph10 = new Graph(grname10);
-
-
-
-
-       </script>
-
+</script>
 
 <div id="container1">
-      <div id="leftbar1">
-          <script> graph1.builder();</script>
-          <div class="tradingview-widget-copyright">BTC USDT</div>
-        </div>
+    <div id="leftbar1">
+        <script> graph1.builder();</script>
+        <div class="tradingview-widget-copyright">BTC USDT</div>
+      </div>
+    <div id="centerbar1">
+        <script> graph2.builder();</script>
+        <div class="tradingview-widget-copyright">ETH USDT</div>
+      </div>
       <div id="rightbar1">
-          <script> graph2.builder();</script>
-          <div class="tradingview-widget-copyright">ETH USDT</div>
-        </div>
-    </div>
-<hr color="#2D4BAB" width="900px"> 
-
-<div id="container1">
-      <div id="leftbar1">
           <script> graph3.builder();</script>
           <div class="tradingview-widget-copyright">APE USDT</div>
         </div>
-      <div id="rightbar1">
-          <script> graph4.builder();</script>
-          <div class="tradingview-widget-copyright">ADA USDT</div>
-        </div>
-    </div>
-<hr color="#2D4BAB" width="900px"> 
-
+        <div id="rightbar2">
+            <script> graph4.builder();</script>
+            <div class="tradingview-widget-copyright">ADA USDT</div>
+          </div>
+  </div>
+<hr color="#2D4BAB" width="1200px">
 <div id="container1">
       <div id="leftbar1">
           <script> graph5.builder();</script>
           <div class="tradingview-widget-copyright">AVAX USDT</div>
         </div>
-      <div id="rightbar1">
+      <div id="centerbar1">
           <script> graph6.builder();</script>
           <div class="tradingview-widget-copyright">SOL SDT</div>
         </div>
-    </div>
-<hr color="#2D4BAB" width="900px"> 
-
-<div id="container1">
-      <div id="leftbar1">
-          <script> graph7.builder();</script>
-          <div class="tradingview-widget-copyright">LUNA USDT</div>
-        </div>
-      <div id="rightbar1">
-          <script> graph8.builder();</script>
-          <div class="tradingview-widget-copyright">ATOM USDT</div>
-        </div>
-    </div>
-<hr color="#2D4BAB" width="900px"> 
-
-<div id="container1">
-      <div id="leftbar1">
-          <script> graph9.builder();</script>
-          <div class="tradingview-widget-copyright">MATIC USDT</div>
-        </div>
-      <div id="rightbar1">
-          <script> graph10.builder();</script>
-          <div class="tradingview-widget-copyright">TRX USDT</div>
-        </div>
-    </div>
-<hr color="#2D4BAB" width="900px"> 
-
+        <div id="rightbar1">
+            <script> graph7.builder();</script>
+            <div class="tradingview-widget-copyright">LUNA USDT</div>
+          </div>
+        <div id="rightbar2">
+            <script> graph8.builder();</script>
+            <div class="tradingview-widget-copyright">ATOM USDT</div>
+          </div>
+  </div>
+<hr color="#2D4BAB" width="1200px">
 
 <div id="chart">
- <!-- TradingView Widget BEGIN -->
- <div class="tradingview-widget-container">
-  <div class="tradingview-widget-container__widget"></div>
-	<script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-screener.js" async>
-  {
-  "width": "900",
-  "height": "500",
-  "defaultColumn": "overview",
-  "screener_type": "crypto_mkt",
-  "displayCurrency": "USD",
-  "colorTheme": "dark",
-  "locale": "ru"
- }
-  </script>
- </div>
+<!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+<div class="tradingview-widget-container__widget"></div>
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-screener.js" async>
+{
+"width": "900",
+"height": "500",
+"defaultColumn": "overview",
+"screener_type": "crypto_mkt",
+"displayCurrency": "USD",
+"colorTheme": "dark",
+"locale": "ru"
+}
+</script>
+</div>
 <!-- TradingView Widget END -->
 </div>
 </body>
